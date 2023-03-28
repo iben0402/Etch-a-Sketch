@@ -1,3 +1,7 @@
+function changeColor() {
+    this.classList.add('coloured');
+}
+
 const container = document.getElementById("container")
 
 for (let index = 0; index < 16; index++) {
@@ -6,8 +10,10 @@ for (let index = 0; index < 16; index++) {
     for (let j = 0; j < 16; j++) {
         var div = document.createElement("div")
         div.className = "column"
+        div.addEventListener('mouseenter', changeColor)
         mainDiv.appendChild(div)
     }
     container.appendChild(mainDiv)
     
 }
+
