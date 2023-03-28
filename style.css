@@ -1,0 +1,17 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    border: solid 1px black;
+    width: 320px;
+}
+
+.column {
+    width: 20px;
+    border: solid 1px black;
+}
